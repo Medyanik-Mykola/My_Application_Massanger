@@ -6,28 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:visibility="visible"
+    <EditText
+        android:id="@+id/sended_text"
+        android:layout_width="219dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="String"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.17" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/send_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="124dp"
+        android:text="Send"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintTop_toBottomOf="@+id/sended_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
